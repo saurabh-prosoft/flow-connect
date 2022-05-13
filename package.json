@@ -4,16 +4,12 @@
   "description": "FlowConnect is a highly-customizable library for creating node-based editors, graphs and diagrams.",
   "main": "dist/cjs/flow-connect.js",
   "types": "dist/cjs/flow-connect.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/cjs/flow-connect.js",
-      "import": "./dist/esm/flow-connect.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/saurabh-prosoft/flow-connect.git"
   },
+  "author": "Saurabh Bhagat",
+  "license": "MIT",
   "scripts": {
     "test": "jest",
     "prebuild": "npx shx rm -rf dist",
@@ -38,8 +34,28 @@
     "visual programming ui library",
     "node ui library"
   ],
-  "author": "Saurabh Bhagat",
-  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/flow-connect.js",
+      "import": "./dist/esm/flow-connect.js"
+    },
+    "./common": {
+      "require": "./dist/cjs/common/index.js",
+      "import": "./dist/esm/common/index.js"
+    },
+    "./core": {
+      "require": "./dist/cjs/core/index.js",
+      "import": "./dist/esm/core/index.js"
+    },
+    "./ui": {
+      "require": "./dist/cjs/ui/index.js",
+      "import": "./dist/esm/ui/index.js"
+    },
+    "./utils": {
+      "require": "./dist/cjs/utils/index.js",
+      "import": "./dist/esm/utils/index.js"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
