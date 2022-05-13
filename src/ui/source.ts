@@ -4,7 +4,7 @@ import { Vector } from "../core/vector";
 import { fileIcon } from "../resource/icons";
 import { Image } from "./image";
 import { Label } from "./label";
-import { SerializedUINode, UINode, UINodeStyle, UIType } from "./ui-node";
+import { SerializedUINode, UINode, UINodeStyle, UIType } from "../core/ui-node";
 import { Serializable } from "../common/interfaces";
 import { Color } from "../core/color";
 import { FlowState } from "../core/flow";

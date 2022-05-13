@@ -3,7 +3,7 @@ import { Serializable } from "../common/interfaces";
 import { Node } from "../core/node";
 import { Vector } from "../core/vector";
 import { Button, Container, Display, Image, Input, Label, Select, Slider, Source, Toggle } from "./index";
-import { SerializedUINode, UINode, UINodeStyle, UIType } from "./ui-node";
+import { SerializedUINode, UINode, UINodeStyle, UIType } from "../core/ui-node";
 
 export class Stack extends UINode implements Serializable {
 

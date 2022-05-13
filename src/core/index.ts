@@ -9,3 +9,4 @@ export * from './subflow-node';
 export * from './terminal';
 export * from './tunnel-node';
 export * from './vector';
+export * from './ui-node';

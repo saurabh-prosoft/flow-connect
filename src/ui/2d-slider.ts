@@ -2,7 +2,7 @@ import { Terminal, TerminalType, SerializedTerminal } from "../core/terminal";
 import { Node } from "../core/node";
 import { SerializedVector, Vector } from "../core/vector";
 import { get } from "../utils/utils";
-import { SerializedUINode, UINode, UINodeStyle, UIType } from "./ui-node";
+import { SerializedUINode, UINode, UINodeStyle, UIType } from "../core/ui-node";
 import { Serializable } from "../common/interfaces";
 import { Color } from "../core/color";
 import { FlowState } from "../core/flow";

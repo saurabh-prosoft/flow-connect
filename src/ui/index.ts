@@ -14,5 +14,5 @@ export * from './slider';
 export * from './source';
 export * from './stack';
 export * from './toggle';
-export * from './ui-node';
+export * from '../core/ui-node';
 export * from './v-slider';

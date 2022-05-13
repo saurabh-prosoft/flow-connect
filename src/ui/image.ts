@@ -4,7 +4,7 @@ import { Node } from "../core/node";
 import { Vector } from "../core/vector";
 import { imageIcon } from "../resource/icons";
 import { Log } from "../utils/logger";
-import { SerializedUINode, UINode, UINodeStyle, UIType } from "./ui-node";
+import { SerializedUINode, UINode, UINodeStyle, UIType } from "../core/ui-node";
 import { Align } from "../common/enums";
 import { SerializedTerminal, Terminal, TerminalType } from "../core/terminal";
 import { FlowState } from '../core/flow';

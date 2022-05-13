@@ -4,14 +4,19 @@
   "description": "FlowConnect is a highly-customizable library for creating node-based editors, graphs and diagrams.",
   "main": "dist/cjs/flow-connect.js",
   "types": "dist/cjs/flow-connect.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/flow-connect.js",
+      "import": "./dist/esm/flow-connect.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/saurabh-prosoft/flow-connect.git"
   },
   "scripts": {
     "test": "jest",
-    "clean": "npx shx rm -rf dist",
-    "prebuild": "npm run clean",
+    "prebuild": "npx shx rm -rf dist",
     "build": "npm run build:umd && npm run build:cjs && npm run build:esm",
     "build:umd": "webpack --config=webpack.prod.js",
     "build:cjs": "tsc",

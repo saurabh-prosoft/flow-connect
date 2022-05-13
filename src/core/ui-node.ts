@@ -1,8 +1,8 @@
-import { Color, SerializedColor } from "../core/color";
-import { Hooks } from "../core/hooks";
-import { Node, NodeState } from "../core/node";
-import { SerializedTerminal, Terminal } from "../core/terminal";
-import { SerializedVector, Vector } from "../core/vector";
+import { Color, SerializedColor } from "./color";
+import { Hooks } from "./hooks";
+import { Node, NodeState } from "./node";
+import { SerializedTerminal, Terminal } from "./terminal";
+import { SerializedVector, Vector } from "./vector";
 import { LOD, ViewPort } from '../common/enums';
 import { get, getNewUUID, intersects } from "../utils/utils";
 import { Events, Renderable } from "../common/interfaces";

@@ -1,5 +1,5 @@
 import { Vector } from "../core/vector";
-import { SerializedUINode, UINode, UINodeStyle, UIType } from "./ui-node";
+import { SerializedUINode, UINode, UINodeStyle, UIType } from "../core/ui-node";
 import { Node } from '../core/node';
 import { Label } from './label';
 import { Terminal, TerminalType, SerializedTerminal } from "../core/terminal";

@@ -3,7 +3,7 @@ import { RenderResolver, Serializable } from "../common/interfaces";
 import { Node } from "../core/node";
 import { Vector } from "../core/vector";
 import { Button, Display, HorizontalLayout, Stack, Image, Input, Label, Select, Slider, Source, Toggle } from "./index";
-import { SerializedUINode, UINode, UINodeStyle, UIType, UINodeRenderParams } from "./ui-node";
+import { SerializedUINode, UINode, UINodeStyle, UIType, UINodeRenderParams } from "../core/ui-node";
 import { Align } from "../common/enums";
 
 export class Container extends UINode implements Serializable {

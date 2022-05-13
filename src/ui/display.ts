@@ -3,7 +3,7 @@ import { Serializable } from "../common/interfaces";
 import { Node } from "../core/node";
 import { Terminal, TerminalType, SerializedTerminal } from "../core/terminal";
 import { Vector } from "../core/vector";
-import { SerializedUINode, UINode, UINodeStyle, UIType } from "./ui-node";
+import { SerializedUINode, UINode, UINodeStyle, UIType } from "../core/ui-node";
 
 export class Display extends UINode implements Serializable {
   displayConfigs: CustomOffCanvasConfig[] = [];
