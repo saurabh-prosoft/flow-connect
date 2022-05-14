@@ -21,7 +21,12 @@ export default {
   module: {
     rules: [{
       test: /\.tsx?$/,
-      use: 'ts-loader',
+      use: [{
+        loader: 'ts-loader',
+        options: {
+          configFile: 'tsconfig.common.json'
+        }
+      }],
       exclude: /node_modules/
     }]
   }

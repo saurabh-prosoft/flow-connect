@@ -1,11 +1,11 @@
-import { Color, SerializedColor } from "./color";
-import { Hooks } from "./hooks";
-import { Node, NodeState } from "./node";
-import { SerializedTerminal, Terminal } from "./terminal";
-import { SerializedVector, Vector } from "./vector";
-import { LOD, ViewPort } from '../common/enums';
-import { get, getNewUUID, intersects } from "../utils/utils";
-import { Events, Renderable } from "../common/interfaces";
+import { Color, SerializedColor } from "./color.js";
+import { Hooks } from "./hooks.js";
+import { Node, NodeState } from "./node.js";
+import { SerializedTerminal, Terminal } from "./terminal.js";
+import { SerializedVector, Vector } from "./vector.js";
+import { LOD, ViewPort } from '../common/enums.js';
+import { get, getNewUUID, intersects } from "../utils/utils.js";
+import { Events, Renderable } from "../common/interfaces.js";
 
 export abstract class UINode extends Hooks implements Events, Renderable {
   private _disabled: boolean;
