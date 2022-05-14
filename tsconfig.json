@@ -1,11 +1,12 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compileOnSave": false,
   "compilerOptions": {
     "moduleResolution": "node",
-    "target": "es2020",
+    "target": "es6",
     "module": "CommonJS",
     "lib": [
-      "ES2020",
+      "es6",
       "DOM"
     ],
     "noImplicitAny": true,

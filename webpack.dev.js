@@ -1,10 +1,10 @@
-const path = require("path");
-const { merge } = require("webpack-merge");
-const common = require("./webpack.common.js");
-const fs = require("fs");
+import path from "path";
+import { merge } from "webpack-merge";
+import common from './webpack.common.js';
+import * as fs from 'fs';
 const examples = fs.readdirSync("dev/scripts/examples/");
 
-module.exports = merge(common, {
+export default merge(common, {
   mode: "development",
   devtool: "source-map",
   devServer: {
