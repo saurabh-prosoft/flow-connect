@@ -3,8 +3,8 @@
   "version": "1.0.5",
   "type": "module",
   "description": "FlowConnect is a highly-customizable library for creating node-based editors, graphs and diagrams.",
-  "main": "dist/cjs/flow-connect.js",
-  "types": "dist/types/flow-connect.d.ts",
+  "main": "./dist/cjs/flow-connect.js",
+  "types": "./dist/types/flow-connect.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/saurabh-prosoft/flow-connect.git"
@@ -14,10 +14,11 @@
   "scripts": {
     "test": "jest",
     "prebuild": "npx shx rm -rf dist",
-    "build": "npm run build:umd && npm run build:cjs && npm run build:esm",
+    "build": "npm run build:umd && npm run build:cjs && npm run build:esm && npm run build:types",
     "build:umd": "webpack --config=webpack.prod.js",
     "build:cjs": "tsc -p tsconfig/tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig/tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig/tsconfig.types.json",
     "dev": "npx webpack serve --config=webpack.dev.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs --clean-temp --clean-cache",
@@ -36,13 +37,18 @@
     "node ui library"
   ],
   "exports": {
-    ".": {
-      "types": "./dist/flow-connect.d.ts",
-      "browser": "./dist/flow-connect.js",
-      "import": "./dist/esm/flow-connect.js",
-      "require": "./dist/cjs/flow-connect.js"
-    },
-    "./package.json": "./package.json"
+    "./*": {
+      
+      "import": "./dist/esm/*.js",
+      "require": "./dist/cjs/*.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./types/*"
+      ]
+    }
   },
   "browser": "./dist/flow-connect.js",
   "devDependencies": {
