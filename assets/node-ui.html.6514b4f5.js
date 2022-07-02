@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-061ad4e6","path":"/guide/node-ui.html","title":"UI for Nodes","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1649616376000,"contributors":[{"name":"saurabh-prosoft","email":"saurabhbhagat98die@gmail.com","commits":3}]},"filePathRelative":"guide/node-ui.md"}');export{e as data};

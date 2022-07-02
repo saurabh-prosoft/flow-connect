@@ -1,0 +1,1 @@
+import{_ as e}from"./app.7bbcf4b0.js";const t={props:["to"],created(){this.$router.push(this.to)}};function r(o,s,c,i,_,p){return" Redirecting... "}var n=e(t,[["render",r],["__file","Redirect.vue"]]);export{n as default};

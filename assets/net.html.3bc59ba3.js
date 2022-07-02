@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4c908d6d","path":"/reference/standard-nodes/net.html","title":"StandardNodes.Net","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1649620134000,"contributors":[{"name":"saurabh-prosoft","email":"saurabhbhagat98die@gmail.com","commits":3}]},"filePathRelative":"reference/standard-nodes/net.md"}');export{e as data};

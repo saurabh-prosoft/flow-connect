@@ -1,0 +1,2 @@
+import{_ as t,r as o,o as s,c as a,b as r,a as c,w as d,e}from"./app.7bbcf4b0.js";const _={},l=r("h1",{id:"interface-renderresolver",tabindex:"-1"},[r("a",{class:"header-anchor",href:"#interface-renderresolver","aria-hidden":"true"},"#"),e(" Interface: RenderResolver")],-1),i=e("RenderResolver<T, P>: (instance: T) => "),f=e("RenderFunction"),h=e(`<T, P>
+`);function u(v,m){const n=o("Ref");return s(),a("div",null,[l,r("pre",null,[i,c(n,{to:"./render-function"},{default:d(()=>[f]),_:1}),h])])}var p=t(_,[["render",u],["__file","render-resolver.html.vue"]]);export{p as default};

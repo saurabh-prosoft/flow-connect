@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-717a64e0","path":"/reference/standard-nodes/math.html","title":"StandardNodes.Math","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1649620134000,"contributors":[{"name":"saurabh-prosoft","email":"saurabhbhagat98die@gmail.com","commits":3}]},"filePathRelative":"reference/standard-nodes/math.md"}');export{e as data};
